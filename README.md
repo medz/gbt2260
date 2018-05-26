@@ -49,7 +49,7 @@ $jsonObject = json_decode($jsonRaw);
 
 ### JavaScript
 
-你可以使用 NPM 或者 Yarn 任意一个工具，但是推荐你的项目是允许进行 `require` JSON 文件的导入功能的。（关于在工程直接导入 json 可以看一下 webpack 插件等，目前很多脚手架均支持，若你遇到问题请在仓库 Issues 山提出。）
+你可以使用 NPM 或者 Yarn 任意一个工具，但是推荐你的项目是允许进行 `require` JSON 文件的导入功能的。
 
 ```bash
 # NPM
@@ -57,4 +57,13 @@ npm -i gb-t-2260
 
 # Yarn
 yarn add gb-t-2260
+```
+
+现在，你已经把 `GB/T 2260` 添加到你的项目中了，我们来使用使用一下吧！
+
+```javascript
+let jsonObject = require('gb-t-2260');
+
+console.log(jsonObject);
+console.log(jsonObject['110000']); // > 北京市
 ```
