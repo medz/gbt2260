@@ -49,7 +49,7 @@ foreach ($data as $value) {
 }
 echo PHP_EOL;
 
-$filename = __DIR__.'/../resources/gbt2260.json';
+$filename = __DIR__.'/../resources/gb-t-2260.json';
 file_put_contents($filename, json_encode($newData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 $filename = realpath($filename);
 echo "\033[45;37;5m [4] \033[0m 📦 Writing to \033[0;32;5m$filename\033[0m", PHP_EOL;
