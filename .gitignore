@@ -1,2 +1,7 @@
-
+# PHP & Composer
 /vendor/
+
+# Node.js & NPM & Yarn
+/node_modules/
+package-lock.json
+yarn.lock
