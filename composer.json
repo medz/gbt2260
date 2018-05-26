@@ -29,8 +29,8 @@
         "preferred-install": "dist",
         "github-protocols": ["https"]
     },
-    "bin": ["scripts/build"],
+    "bin": ["scripts/raw-build.php"],
     "scripts": {
-        "build": "@php scripts/build"
+        "build": "@php scripts/raw-build.php"
     }
 }
