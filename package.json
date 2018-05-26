@@ -6,5 +6,6 @@
   "main": "resources/gb-t-2260.json",
   "repository": "https://github.com/medz/gb-t-2260.git",
   "author": "Seven Du <shiweidu@outlook.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "markdown": "github"
 }
