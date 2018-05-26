@@ -1,6 +1,6 @@
 {
     "name": "medz/gb-t-2260",
-    "keywords": ["GB", "GB/T", "GB/T 2260", "2260", "China"],
+    "keywords": ["GB", "GB-T", "GB-T 2260", "2260", "China"],
     "description": "中华人民共和国国家标准 GB/T 2260 行政区划代码",
     "homepage": "https://github.com/medz/gb-t-2260",
     "type": "library",
