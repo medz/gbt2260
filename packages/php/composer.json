@@ -1,0 +1,7 @@
+{
+	"autoload-dev": {
+		"psr-4": {
+            "Medz\\GBT2260\\Tests\\": "packages/php/tests/"
+        }
+	}
+}

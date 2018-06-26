@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+include __DIR__.'/../autoload.php';
+
+$app = new Medz\GBT2260\ResourceBuilder\Application();
+$status = $app->run();
+
+exit($status);

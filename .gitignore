@@ -1,5 +1,6 @@
 # PHP & Composer
 /vendor/
+composer.lock
 
 # Node.js & NPM & Yarn
 /node_modules/

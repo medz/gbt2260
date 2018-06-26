@@ -19,18 +19,36 @@
         "source": "https://github.com/medz/gb-t-2260.git"
     },
     "autoload": {
-        "files": [
-            "php/helpers.php"
-        ]
+        "psr-4": {
+            "Medz\\GBT2260\\": "packages/php/src"
+        }
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
         "preferred-install": "dist",
-        "github-protocols": ["https"]
+        "github-protocols": ["https"],
+        "platform": {
+            "php": "7.1.3"
+        }
     },
-    "bin": ["scripts/raw-build.php"],
     "scripts": {
-        "build": "@php scripts/raw-build.php"
+        "build": "@php scripts/raw-build.php",
+        "dev": "@php packages/resource-builder/bin/gb-t-2260"
+    },
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "require-dev": {
+        "wikimedia/composer-merge-plugin": "^1.4"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "packages/php/composer.json",
+                "packages/resource-builder/composer.json"
+            ],
+            "merge-dev": true
+        }
     }
 }
