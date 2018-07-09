@@ -38,7 +38,7 @@ class Application extends Container
 	public function run()
 	{
 		// Get console app instance.
-		$app = $this->getConsoleAppLication();
+		$app = $this->getConsoleApplication();
 
 		// // Add builder command.
 		// $app->add(
@@ -59,7 +59,7 @@ class Application extends Container
 	 *
 	 * @return
 	 */
-	public function getConsoleAppLication()
+	public function getConsoleApplication()
 	{
 		return $this->make(Console\Application::class);
 	}
@@ -84,6 +84,10 @@ class Application extends Container
 		return static::VERSION;
 	}
 
+	/**
+	 * Register aliases.
+	 * @return void
+	 */
 	protected function registerAliases()
 	{
 		foreach ([
