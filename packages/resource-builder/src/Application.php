@@ -23,11 +23,12 @@ class Application extends Container
 	 */
 	public function __construct()
 	{
-		// Set the Application is instance.
-		static::setInstance($this);
-
 		// Register aliases.
 		$this->registerAliases();
+
+		// Set the Application is instance.
+		static::setInstance($this)
+			->instance(static::class, $this);
 	}
 
 	/**
@@ -40,14 +41,11 @@ class Application extends Container
 		// Get console app instance.
 		$app = $this->getConsoleApplication();
 
-		// // Add builder command.
-		// $app->add(
-		// 	// Get builder command instance.
-		// 	$builderCommand = $this->make(Console\Commands\Builder::class);
-		// );
-
-		// // Ser builder command is default command.
-		// $app->setDefaultCommand($builderCommand->getName());
+		// Add Build command.
+		$app->add(
+			// Get builder command instance.
+			$buildCommand = $this->make(Console\Commands\BuildCommand::class)
+		);
 
 		// Run console app,
 		// return exit code.
