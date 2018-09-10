@@ -8,23 +8,19 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Medz\GBT2260\ResourceBuilder\Application;
+use Medz\GBT2260\ResourceBuilder\Builder\Builder;
 
 class BuildCommand extends Command
 {
-	/**
-	 * Builder Container
-	 * @var \Medz\GBT2260\ResourceBuilder\Application
-	 */
-	protected $app;
+	protected $builder;
 
 	/**
 	 * Create the command instance.
 	 * @param \Medz\GBT2260\ResourceBuilder\Application $app
 	 */
-	public function __construct(Application $app)
+	public function __construct(Builder $builder)
 	{
-		$this->app = $app;
-
+		$this->builder = $builder;
 		parent::__construct();
 	}
 
@@ -44,5 +40,6 @@ class BuildCommand extends Command
 
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
+		$this->builder->handle($output);
 	}
 }

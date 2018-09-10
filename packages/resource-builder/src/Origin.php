@@ -41,7 +41,7 @@ class Origin implements ArrayAccess, IteratorAggregate
      * @param  mixed  $key
      * @return bool
      */
-    public function offsetExists($key)
+    public function offsetExists($key): bool
     {
         return array_key_exists($key, $this->items);
     }

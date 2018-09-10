@@ -27,7 +27,6 @@
     "prefer-stable": true,
     "config": {
         "preferred-install": "dist",
-        "github-protocols": ["https"],
         "platform": {
             "php": "7.1.3"
         }
@@ -40,7 +39,8 @@
         "php": ">=7.1.3"
     },
     "require-dev": {
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "guzzlehttp/guzzle": "^6.3"
     },
     "extra": {
         "merge-plugin": {

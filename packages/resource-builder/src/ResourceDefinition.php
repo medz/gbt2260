@@ -11,13 +11,5 @@ class ResourceDefinition
 	 */
 	public const ORIGIN_FILENAME = __DIR__.'/../resources/origin.yml';
 
-	/**
-	 * 	`origin-lock.template.yml` file path.
-	 */
-	public const ORIGIN_LOCK_TEMPLATE_FILINAME = __DIR__.'/../resources/origin-lock.template.yml';
-
-	/**
-	 * `origin-lock.yml` file path.
-	 */
-	public const ORIGIN_LOCK_FILENAME = __DIR__.'/../resources/origin-lock.yml';
+	public const RESOURCE_DIR = __DIR__.'/../../../resources';
 }

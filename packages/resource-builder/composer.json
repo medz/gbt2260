@@ -6,6 +6,7 @@
 		}
 	},
 	"require-dev": {
+		"php": ">=7.1",
 		"symfony/yaml": "^4.1",
         "symfony/console": "^4.1",
         "illuminate/container": "^5.6"
