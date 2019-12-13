@@ -1,10 +1,16 @@
 {
   "name": "gb-t-2260",
-  "version": "1.0.0",
-  "keywords": ["GB", "GB/T", "GB/T 2260", "2260", "China"],
+  "version": "2.0.0",
+  "keywords": [
+    "GB",
+    "GB/T",
+    "GB/T 2260",
+    "2260",
+    "China"
+  ],
   "description": "中华人民共和国国家标准 GB/T 2260 行政区划代码（JSON RAW）",
   "homepage": "https://www.npmjs.com/package/gb-t-2260",
-  "main": "resources/gb-t-2260.json",
+  "main": "resources/2019.json",
   "repository": "https://github.com/medz/gb-t-2260.git",
   "author": "Seven Du <shiweidu@outlook.com>",
   "license": "MIT",

@@ -1,6 +1,12 @@
 {
     "name": "medz/gb-t-2260",
-    "keywords": ["GB", "GB-T", "GB-T 2260", "2260", "China"],
+    "keywords": [
+        "GB",
+        "GB-T",
+        "GB-T 2260",
+        "2260",
+        "China"
+    ],
     "description": "中华人民共和国国家标准 GB/T 2260 行政区划代码",
     "homepage": "https://github.com/medz/gb-t-2260",
     "type": "library",
@@ -20,7 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Medz\\GBT2260\\": "packages/php/src"
+            "Medz\\GBT2260\\": "php"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Medz\\GBT2260\\ResourceBuilder\\": "resource-builder"
         }
     },
     "minimum-stability": "stable",
@@ -39,16 +50,6 @@
         "php": ">=7.1.3"
     },
     "require-dev": {
-        "wikimedia/composer-merge-plugin": "^1.4",
-        "guzzlehttp/guzzle": "^6.3"
-    },
-    "extra": {
-        "merge-plugin": {
-            "include": [
-                "packages/php/composer.json",
-                "packages/resource-builder/composer.json"
-            ],
-            "merge-dev": true
-        }
+        "guzzlehttp/guzzle": "^6.5"
     }
 }
