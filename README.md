@@ -24,7 +24,7 @@ composer require medz/gb-t-2260
 ```
 
 ```php
-$getter = \Medz\GBT2260\Getter();
+$getter = \Medz\GBT2260\Getter::instance();
 
 ## 获取一个代码的省信息
 $province = $getter->province('511304'); // 四川省
