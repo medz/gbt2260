@@ -43,8 +43,7 @@
         }
     },
     "scripts": {
-        "build": "@php scripts/raw-build.php",
-        "dev": "@php packages/resource-builder/bin/gb-t-2260"
+        "build": "@php resource-builder/bin.php"
     },
     "require": {
         "php": ">=7.1.3"
