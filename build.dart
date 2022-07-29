@@ -1,9 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
 
+const String lastYear = '1982';
+const String firstYear = '1981';
+
 void main() async {
-  final last = readResopurce('./resources/1981.json');
-  final first = readResopurce('./resources/1980.json');
+  final last = readResopurce('./resources/$lastYear.json');
+  final first = readResopurce('./resources/$firstYear.json');
 
   // last 相较于 first
   Map added = {};
@@ -11,7 +14,8 @@ void main() async {
   for (var element in last.entries) {
     if (first.containsKey(element.key) && last.containsKey(element.key)) {
       if (first[element.key] != last[element.key]) {
-        nameChanged[first[element.key]] = last[element.key];
+        nameChanged['${element.key} <> ${first[element.key]}'] =
+            last[element.key];
         continue;
       }
     }
@@ -47,6 +51,8 @@ void main() async {
   }
 
   await file.writeAsString('''
+====== $lastYear 相较于 $firstYear ======
+
 改名的：
 $changedString
 ==============
