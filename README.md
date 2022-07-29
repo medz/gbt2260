@@ -1,41 +1,39 @@
-# GB/T 2260
+<!-- 
+This README describes the package. If you publish this package to pub.dev,
+this README's contents appear on the landing page for your package.
 
-> GB/T 2260 数据每年省级别以上更新较少，现在行策略，CI 会在每年的年底和第二年的年初抓取最新数据！
+For information about how to write a good package README, see the guide for
+[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
 
-中华人民共和国国家标准 GB/T 2260 行政区划代码
+For general information about developing packages, see the Dart guide for
+[creating packages](https://dart.dev/guides/libraries/create-library-packages)
+and the Flutter guide for
+[developing packages and plugins](https://flutter.dev/developing-packages). 
+-->
 
-`tb-t-2260`，为什么会是一个这个丑的字符串呢？很简单，因为 `GB/T 2260` 进行简单的「中横线处理」后就是了。（比较符合程序员思维，你懂我的意思吧？）
+TODO: Put a short description of the package here that helps potential users
+know whether this package might be useful for them.
 
-`GB/T 2260` 国家推荐县级以上行政区规划代码，记住，很多仓库都忽略了 `T`，这个 T 就是推荐的意思，国家发布的标准是 `GB/T` 而不是 `GB`（国标）哟！
+## Features
 
-这个包的提供了自**1980**年到现今未知所有地区代码。其中自身提供的 `Getter` 类更是可以查询所有地区信息。
+TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-除了提供目前为止所有年份县级以上信息外，还提供历年年份差异信息，存在 `resources/diff/` 目录下。
+## Getting started
 
-## 允许使用途径
+TODO: List prerequisites and provide or point to information on how to
+start using the package.
 
-- Git (好的，这个不用说了，你用 Git 克隆后你自己就知道怎么做了)
-- [PHP (Using Composer)](#php)
+## Usage
 
-### PHP
+TODO: Include short and useful examples for package users. Add longer examples
+to `/example` folder. 
 
-使用 PHP 版本，你可以使用 Composer 快速的下载：
-
-```
-composer require medz/gb-t-2260
-```
-
-```php
-$getter = \Medz\GBT2260\Getter::instance();
-
-## 获取一个代码的省信息
-$province = $getter->province('511304'); // 四川省
-
-## 获取市级地区，注意，直辖地区是返回 null
-$city = $getter->city('511304'); // 南充市
-
-## 获取区级地区
-$county = $getter->county('511304'); // 嘉陵区
+```dart
+const like = 'sample';
 ```
 
-> 包里面使用 diff 差异文件，你输入的代码是往年代码就会返回往年的地区信息字符串。
+## Additional information
+
+TODO: Tell users more about the package: where to find more information, how to 
+contribute to the package, how to file issues, what response they can expect 
+from the package authors, and more.
