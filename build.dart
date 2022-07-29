@@ -33,7 +33,7 @@ void main() async {
   }
 
   // 写入到 diff 文件
-  final file = File('./diff.txt');
+  final file = File('./diff2.txt');
   String changedString = '';
   String addedString = '';
   String removedString = '';
